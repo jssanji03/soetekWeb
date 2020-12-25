@@ -1,12 +1,16 @@
 
 .transportaion_area{
-    padding: 120px 0 90px 0;
+    padding: 30px 0 90px 0;
+    margin-top: 30px;
     @media #{$mobile_device} {
         padding: 70px 0 40px 0;
     }
     .single_transport{
         padding-right: 65px;
         margin-bottom: 30px;
+        width: 300px;
+        height: 250px;
+        padding: 40px;
         @media #{$mobile_device}{
             padding-right: 0;
         }
@@ -28,9 +32,19 @@
             color: #919191;
         }
         &:hover{
-            h3{
+                width: 300px;
+                height: 250px;
+                padding: 40px;
+                background-color: rgba(255, 255, 255, 0.9);
+                box-shadow: 0px 3px 6px #a9cbf3a6;
+                border-radius: 30px 0px 30px 0px;
+                p{
+                    color: #494949;
+                }
+                h3{
                 color:#FF3414 ;
             }
-        }
+            }
+       
     }
 }

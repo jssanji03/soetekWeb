@@ -1,5 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,6 +767,24 @@ h3 {
   top: -31px;
 }
 
+.gototop {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  /*先隱藏*/
+}
+
+.top {
+  width: 50px;
+  height: 50px;
+}
+
 .header-area {
   left: 0;
   right: 0;
@@ -1183,7 +1204,7 @@ h3 {
 }
 
 .slider_bg_1 {
-  background-image: url(../img/banner/banner.png);
+  background-image: url(../img/about/about4.jpg);
 }
 
 .slider_area {
@@ -1207,6 +1228,15 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.slider_area .single_slider .slider_text .text2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.slider_area .single_slider .slider_text h3 {
+  text-shadow: 0px 2px 6px #001D38a4;
 }
 
 .slider_area .single_slider.single_slider2 {
@@ -2137,7 +2167,7 @@ h3 {
 }
 
 .contact_action_area {
-  background-image: url(../img/banner/contact_bg.png);
+  background-image: url(../img/banner/office3.jpg);
   position: relative;
   z-index: 0;
   padding: 138px 0;
@@ -2157,13 +2187,13 @@ h3 {
 .contact_action_area .action_heading .oracleLogo {
   width: 300px;
   height: 100px;
-  margin-bottom: 30px;
   background-image: url(../img/oracle/Oracle-NetSuite-w.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .contact_action_area .action_heading .oracleText1 {
+  margin-top: 30px;
   line-height: 40px;
   font-size: 15px;
 }
@@ -2172,8 +2202,46 @@ h3 {
   width: 100%;
   height: 300px;
   background-image: url(../img/oracle/OracleMovie_01.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 3px 6px #000c18;
+          box-shadow: 0px 3px 6px #000c18;
+}
+
+.contact_action_area .oracleMovie2 {
+  margin-top: 200px;
+}
+
+.contact_action_area .oracleMovie2 .oracleTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #DB4337;
+}
+
+.contact_action_area .oracleMovie2 .oracleText1 {
+  margin-top: 30px;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.contact_action_area .oracleMovie3 {
+  margin-top: 200px;
+}
+
+.contact_action_area .oracleMovie3 .oracleTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #DB4337;
+}
+
+.contact_action_area .oracleMovie3 .oracleText1 {
+  margin-top: 30px;
+  line-height: 40px;
+  font-size: 15px;
 }
 
 @media (max-width: 767px) {
@@ -2305,11 +2373,15 @@ h3 {
 }
 
 .chose_area .about_image1 {
-  width: 445px;
+  width: 400px;
   height: 450px;
-  background-image: url(https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(../img/about/about5.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center right;
+}
+
+.chose_area .features {
+  margin-top: 150px;
 }
 
 @media (max-width: 767px) {
@@ -2497,7 +2569,9 @@ h3 {
 
 .contact_location {
   background: #F5FBFF;
-  padding: 100px 0;
+  width: 100%;
+  height: 250px;
+  padding: 50px 0;
 }
 
 @media (max-width: 767px) {
@@ -2514,6 +2588,7 @@ h3 {
 
 .contact_location .location_left .logo {
   margin-bottom: 40px;
+  width: 200px;
 }
 
 .contact_location .location_left ul li {
@@ -3434,7 +3509,8 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 }
 
 .transportaion_area {
-  padding: 120px 0 90px 0;
+  padding: 30px 0 90px 0;
+  margin-top: 30px;
 }
 
 @media (max-width: 767px) {
@@ -3446,6 +3522,9 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 .transportaion_area .single_transport {
   padding-right: 65px;
   margin-bottom: 30px;
+  width: 300px;
+  height: 250px;
+  padding: 40px;
 }
 
 @media (max-width: 767px) {
@@ -3473,6 +3552,20 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
   font-weight: 400;
   line-height: 28px;
   color: #919191;
+}
+
+.transportaion_area .single_transport:hover {
+  width: 300px;
+  height: 250px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 3px 6px #a9cbf3a6;
+          box-shadow: 0px 3px 6px #a9cbf3a6;
+  border-radius: 30px 0px 30px 0px;
+}
+
+.transportaion_area .single_transport:hover p {
+  color: #494949;
 }
 
 .transportaion_area .single_transport:hover h3 {
@@ -3480,7 +3573,8 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 }
 
 .transportaion_area {
-  padding: 120px 0 90px 0;
+  padding: 30px 0 90px 0;
+  margin-top: 30px;
 }
 
 @media (max-width: 767px) {
@@ -3492,6 +3586,9 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 .transportaion_area .single_transport {
   padding-right: 65px;
   margin-bottom: 30px;
+  width: 300px;
+  height: 250px;
+  padding: 40px;
 }
 
 @media (max-width: 767px) {
@@ -3519,6 +3616,20 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
   font-weight: 400;
   line-height: 28px;
   color: #919191;
+}
+
+.transportaion_area .single_transport:hover {
+  width: 300px;
+  height: 250px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 3px 6px #a9cbf3a6;
+          box-shadow: 0px 3px 6px #a9cbf3a6;
+  border-radius: 30px 0px 30px 0px;
+}
+
+.transportaion_area .single_transport:hover p {
+  color: #494949;
 }
 
 .transportaion_area .single_transport:hover h3 {
@@ -4821,27 +4932,27 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus {
 
 .service_area {
   background: #F5FBFF;
-  padding: 120px 0 90px 0;
+  padding: 90px 0 90px 0;
 }
 
-.service_area .transportaion_area .single_transport {
-  width: 300px;
-  height: 250px;
-  padding: 40px;
+.service_area .section_text h3 {
+  font-size: 48px;
+  font-weight: 400;
 }
 
-.service_area .transportaion_area .single_transport:hover {
-  width: 300px;
-  height: 250px;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 0px 3px 6px #a9cbf3a6;
-          box-shadow: 0px 3px 6px #a9cbf3a6;
-  border-radius: 30px 0px 30px 0px;
+.service_area .section_text .section_p {
+  width: 900px;
+  font-size: 15px;
+  margin: 30px auto;
 }
 
-.service_area .transportaion_area .single_transport:hover p {
-  color: #494949;
+.service_area .fonyitek {
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/oracle/fonyitek.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 767px) {

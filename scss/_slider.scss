@@ -1,5 +1,5 @@
 .slider_bg_1{
-    background-image: url(../img/banner/banner.png);
+    background-image: url(../img/about/about4.jpg);
 }
 
 // .slider_bg_2{
@@ -23,6 +23,15 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        .slider_text{
+            .text2{
+                font-family: $font3;
+                font-weight: 400;
+            }
+            h3{
+                text-shadow: 0px 2px 6px #001D38a4;
+            }
+        }
         &.single_slider2{
             height: 450px;
             @media #{$mobile_device} {
@@ -39,6 +48,7 @@
                         font-size: 60px;
                         line-height: 80px;
                         margin-bottom: 51px;
+        
                     }
                 }
                 .property_form{
